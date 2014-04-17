@@ -24,10 +24,16 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
 \name{Tianyu Cheng} % Your name
 %\address{2510 Leon Street, Apt. 615 \\ Austin, Texas 78705} % Your address
 \address{(512)~$\cdot$~517~$\cdot$~1107 \\ tianyu.cheng@utexas.edu} % Your phone number and email
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}% Remove header rule
+\pagestyle{fancy}% Set default page style to fancy
+
 
 \begin{document}
 
@@ -123,6 +129,7 @@ Overall GPA: 3.85
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 	Programming Languages & Proficiency in Java, C/C++ \\ & Exposure to Python, Ruby \\
+
 	Web Development & Experience in HTML/CSS, Javascript (jQuery), XML/JSON \\ & Exposure to HTML5/CSS3, Struts \\
 	 & Comfortable with UNIX/Linux environment
 \end{tabular}
@@ -141,4 +148,5 @@ Overall GPA: 3.85
 
 %----------------------------------------------------------------------------------------
 
+\cfoot{Personal Website: \url{http://www.cs.utexas.edu/~jhcty11/}}
 \end{document}
