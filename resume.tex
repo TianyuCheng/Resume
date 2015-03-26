@@ -195,7 +195,7 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \runsubsection{Digital Media Institute}
 \descript{| Student Technician }
 \location{June 2014 – December 2014 | Austin, TX}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize} 
 \item Worked on the back-end OOP design and implementation of an educational game with Unity and C\#.
 \item Developed several third-party tools to facilitate game data management in Python, and provides a sanity check of the validity of the data.
@@ -220,7 +220,7 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \runsubsection{Ray Tracer}
 \descript{| Computer Graphics }
 \begin{tightemize} 
-\item A multiple-threaded ray tracer based on Whitted model with reflection and refraction.
+\item A multithreaded ray tracer based on Whitted model.
 \item Used KD tree and SAH for ray-object intersection optimization.
 \item Supports glossiness and depth of field using distribution ray tracing.
 \end{tightemize}
@@ -229,16 +229,16 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \runsubsection{GameL}
 \descript{| Scala DSL }
 \begin{tightemize} 
-\item A game scripting domain-specific language using Scala and Swing.
+\item A game scripting DSL(domain-specific language) using Scala and Swing.
 \item Designed and implemented a set of syntax for basic game object manipulation.
 \item Attaches a demo of the classical game Snake using GameL.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{3D Graphics Animation}
+\runsubsection{3D Model Viewer}
 \descript{| OpenGL GLSL}
 \begin{tightemize} 
-\item A shader-based OpenGL program that renders animating MMD 3D models. It provides a basic scene manager and a MMD-based renderer for small graphics applications.
+\item A shader-based OpenGL program that renders 3D models of format PMD/PMX(Polygon Model Data/eXtend) with simple animation. 
 \item Currently being ported to web platform using WebGL and CoffeeScript.
 \end{tightemize}
 \sectionsep
@@ -246,8 +246,8 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \runsubsection{Online Linear Algebra Solver}
 \descript{| Python Django}
 \begin{tightemize} 
-\item Many high school students are getting ahead in Mathematics. This project aims to help students learn linear algebra by examples. 
-\item Solve linear algebra problems and show the individual steps of how they are solved,
+\item A web project aiming at teaching students linear algebra by example.
+\item Solve linear algebra problems and show the individual steps,
     including row reduction, matrix multiplication, inverse of matrices, etc.
 \end{tightemize}
 \sectionsep
@@ -255,29 +255,20 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \runsubsection{Online Law Case Manager}
 \descript{| Office Automation}
 \begin{tightemize} 
-\item Law cases management generally involves repetitive operation. This project aims to simplify the procedure.
-\item Implemented with Python, Karrigell and MySQL. 
-\item Provides an easy-to-use UI for users to archive, modify and delete law case records. It also generates law case documents for printing.
+\item A Python/Karrigell web project for office automation in law office.
+\item Generates archives for law case records and store them in local database.
+\item Supports archive insertion, deletion and printing.
 \end{tightemize}
 \sectionsep
 
-% \runsubsection{Online Website Designer}
-% \descript{| UI \& UX Design }
-% \begin{tightemize} 
-% \item This project owes the inspiration to online website editing tools, e.g. Weebly and Yola. 
-% \item Implemented with Java Struts, HTML/CSS and JavaScript. 
-% \item Creates a user-friendly interface to customize websites by drag-and-drop.
-% \end{tightemize}
-% \sectionsep
-
-% \runsubsection{Desktop Task Reminder}
-% \descript{| Qt Sprite}
-% \begin{tightemize} 
-% \item This project is a birthday present for my mother.
-% \item Implemented with Qt for GUI and sqlite3 for task management.
-% \item Provides a customizable notification system and sends out notifications asking user to rest every two hours.
-% \end{tightemize}
-% \sectionsep
+\runsubsection{Online Website Designer}
+\descript{| UI \& UX Design }
+\begin{tightemize} 
+\item A Java/Struts web project for UI/UX design.
+\item Provides a user-friendly interface to customize websites by drag\&drop.
+\item CREDIT: This project owes the inspiration to online website editing tools, e.g. Weebly and Yola. 
+\end{tightemize}
+\sectionsep
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
