@@ -87,14 +87,14 @@
 \location{May 2017 | Austin, TX}
 College of Natural Science \\
 Five Years BS/MS Integrated Program \\
-\location{Major GPA: 3.9 / 4.0}
+\location{Major GPA: 3.75 / 4.0}
 \sectionsep
 
 \descript{B.S. in Computer Science}
 \location{May 2016 | Austin, TX}
 College of Natural Science \\
 Turing Scholars Program \\
-\location{Major GPA: 3.9 / 4.0}
+\location{Major GPA: 3.95 / 4.0}
 \sectionsep
 
 
@@ -105,21 +105,23 @@ Turing Scholars Program \\
 \section{Courses}
 
 \subsection{Undergraduate}
+Operating System \\
 Algorithm \& Complexity \\
-Computer Vision \\
 Artificial Intelligence \\
 Programming Languages \\
-Operating Systems \\
-Data Management \\
-Data Structure \\
+Computer Vision/Machine Learning \\
+Data Mining \\
+Network \& Privacy \\
 
 \sectionsep
 
 \subsection{Graduate}
-Compilers \\
+Compiler \\
 Computer Graphics \\
 Autonomous Robots \\
 Software Design \\
+Advanced Operating System \\
+Numerical Linear Algebra \\
 
 \sectionsep
 
@@ -128,31 +130,21 @@ Software Design \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
+\subsection{Languages}
 \begin{tabular}{ll}
-\skillbar{C/C++}{0.7}
+\skillbar{C/C++\hspace{1.5em}}{0.7}
 \skillbar{Java}{0.8}
-\skillbar{C\#}{0.5}
-\skillbar{Python}{0.6}
+\skillbar{Python}{0.8}
 \end{tabular}
 
 \sectionsep
 
-\subsection{Web Development}
+\subsection{Interests}
 \begin{tabular}{ll}
-\skillbar{HTML/CSS}{0.7}
-\skillbar{JavaScript}{0.6}
-\skillbar{Node.js}{0.5}
-\skillbar{Django}{0.5}
-\end{tabular}
-
-\sectionsep
-
-\subsection{Computer Graphics}
-\begin{tabular}{ll}
-\skillbar{OpenGL}{0.7}
-\skillbar{WebGL}{0.6}
-\skillbar{GLSL}{0.6}
+\skillbar{Graphics}{0.9}
+\skillbar{System}{0.5}
+\skillbar{Compiler}{0.4}
+\skillbar{Web}{0.6}
 \end{tabular}
 
 \sectionsep
@@ -163,7 +155,7 @@ Software Design \\
 
 \section{Links} 
 Github: \href{https://github.com/tycheng}{\custombold{tycheng}} \\
-% LinkedIn: \href{www.linkedin.com/pub/tianyu-cheng/66/335/834/}{\custombold{tianyu-cheng}} \\
+LinkedIn: \href{www.linkedin.com/pub/tianyu-cheng/66/335/834/}{\custombold{tianyu-cheng}} \\
 Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 
 \sectionsep
@@ -186,23 +178,23 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 
 \runsubsection{Apple}
 \descript{| GPU Validation Team }
-\location{June 2016 – August 2016 | Austin, TX}
+\location{May 2016 – August 2016 | Austin, TX}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize} 
 \item developed an internal web front-end tool for performance visualization
 \item implemented and validated counters in performance model
-\item worked on numerics validation
+\item worked on numerics validation for GPU driver
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Apple}
 \descript{| GPU Validation Team }
-\location{June 2015 – August 2015 | Austin, TX}
+\location{May 2015 – August 2015 | Austin, TX}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize} 
 \item developed an internal server-side tool with Ruby on Rails for test automation
 \item developed a web front-end data analysis tool for data visualization
-\item worked on numerics validation
+\item worked on numerics validation for GPU driver
 \end{tightemize}
 \sectionsep
 
@@ -211,9 +203,8 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \location{June 2014 – December 2014 | Austin, TX}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize} 
-\item worked on the back-end OOP design and implementation of an educational game with Unity and C\#
-\item developed several third-party tools to facilitate game data management in Python, and provides a sanity check of the validity of the data
-\item refactored back-end codes to comply with MVC pattern
+\item back-end design and implementation for an educational game in Unity
+\item developed several third-party tools to facilitate game development
 \end{tightemize}
 \sectionsep
 
@@ -222,6 +213,15 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
+
+\runsubsection{Planet Render}
+\descript{| Computer Graphics }
+\begin{tightemize} 
+\item a procedural terrain rendering program in OpenGL/GLSL
+\item procedural terrain generation based on Perlin noise
+\item LoD (level-of-detail) terrain/ocean rendering with CDLOD (continuous-distance LoD)
+\end{tightemize}
+\sectionsep
 
 \runsubsection{Ray Tracer}
 \descript{| Computer Graphics }
@@ -232,38 +232,31 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \end{tightemize}
 \sectionsep
 
+\runsubsection{3D Animator}
+\descript{| Computer Graphics Animation}
+\begin{tightemize} 
+\item a simple 3D animator for 3D format PMD/PMX
+\item implemented using OpenGL/GLSL for model rendering
+\item supports FK (forward kinematics) and simple IK (inverse kinematics)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Latte Compiler}
+\descript{| Deep Neural Network, Source-to-Source }
+\begin{tightemize} 
+\item a source-to-source compiler for deep neural network in Python-style descriptive language
+\item AST pattern match for parsing deep neural network architecture
+\item loop structure optimization with Intel MKL(BLAS) library
+\item data structure transformation for cache optimization
+\end{tightemize}
+\sectionsep
+
 \runsubsection{GameL}
 \descript{| Scala DSL }
 \begin{tightemize} 
 \item a game scripting DSL(domain-specific language) using Scala and Swing
-\item designed and implemented a set of syntax for basic game object manipulation
-\item attaches a demo of the classical game Snake using GameL
-\end{tightemize}
-\sectionsep
-
-\runsubsection{3D Model Viewer}
-\descript{| OpenGL GLSL}
-\begin{tightemize} 
-\item a shader-based OpenGL program that renders 3D models of format PMD/PMX(Polygon Model Data/eXtend) with simple animation
-\item currently being ported to web platform using WebGL and CoffeeScript
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Online Linear Algebra Solver}
-\descript{| Python Django}
-\begin{tightemize} 
-\item a web project aiming at teaching students linear algebra by example
-\item solve linear algebra problems and show the individual steps,
-    including row reduction, matrix multiplication, inverse of matrices, etc
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Online Website Designer}
-\descript{| UI \& UX Design }
-\begin{tightemize} 
-\item a Java/Struts web project for UI/UX design
-\item provides a user-friendly interface to customize websites by drag\&drop
-\item CREDIT: This project owes the inspiration to online website editing tools, e.g. Weebly and Yola. 
+\item designed and implemented a set of syntax for basic game object creation and manipulation
+\item implemented a demo of the classical game Snake using GameL
 \end{tightemize}
 \sectionsep
 
