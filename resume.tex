@@ -52,7 +52,6 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -60,11 +59,22 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\namesection{}{Tianyu Cheng}{
-    % \urlstyle{same}\url{http://tycheng.github.io} \\
-    \href{mailto:tianyu.cheng@utexas.edu}{tianyu.cheng@utexas.edu} | Phone (512).517.1107
+\newpage
+\vspace{-10pt}
+\centering{
+    \fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{24pt}{0cm}\selectfont Tianyu
+    \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont Cheng
 }
+\vspace{5pt} \\
+\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont
+    \href{mailto:tianyu_cheng@apple.com}{tianyu\_cheng@apple.com}
+    (512).517.1107
+}
+\centering{
+    \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+}
+\vspace{-20pt}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -177,10 +187,22 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 
 \section{Experience}
 
+\runsubsection{Apple}
+\descript{| GPU Architectural Validation Team }
+\location{Jun 2017 – Current | Austin, TX}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item create software to verify architectural and micro-architectural functionality,
+    performance, and power of pre-silicon hardware designs
+\item review specifications, develop attributes, tests and coverage plans, and define
+    methodology and test benches
+\end{tightemize}
+\sectionsep
+
 \runsubsection{University of Texas at Austin}
 \descript{| Research Assistant }
 \location{Jan 2017 – May 2017 | Austin, TX}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item measured performance of non-volatile memory libraries
 \item port git to use transactional file system
@@ -188,7 +210,7 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \sectionsep
 
 \runsubsection{Apple}
-\descript{| GPU Validation Team }
+\descript{| GPU Architectural Validation Team }
 \location{May 2016 – August 2016 | Austin, TX}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -199,7 +221,7 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \sectionsep
 
 \runsubsection{Apple}
-\descript{| GPU Validation Team }
+\descript{| GPU Architectural Validation Team }
 \location{May 2015 – August 2015 | Austin, TX}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -209,13 +231,28 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Digital Media Institute}
-\descript{| Student Technician }
-\location{June 2014 – December 2014 | Austin, TX}
-% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \runsubsection{Digital Media Institute}
+% \descript{| Student Technician }
+% \location{June 2014 – December 2014 | Austin, TX}
+% % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item back-end design and implementation for an educational game in Unity
+% \item developed several third-party tools to facilitate game development
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+
+\runsubsection{TxFS}
+\descript{ Leveraging File-System Crash Consistency to Provide ACID Transactions }
+\location{USENIX ATC '18}
 \begin{tightemize}
-\item back-end design and implementation for an educational game in Unity
-\item developed several third-party tools to facilitate game development
+\item Yige Hu, Zhiting Zhu, Ian Neal, Youngjin Kwon, and Tianyu Cheng, The University of Texas at Austin
+\item Vijay Chidambaram, The University of Texas at Austin and VMware Research; Emmett Witchel, The University of Texas at Austin
 \end{tightemize}
 \sectionsep
 
@@ -243,13 +280,13 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \end{tightemize}
 \sectionsep
 
-\runsubsection{3D Animator}
-\descript{| Computer Graphics Animation}
-\begin{tightemize}
-\item a simple 3D animator for 3D format PMD/PMX
-\item implemented using OpenGL/GLSL for model rendering
-\item supports FK (forward kinematics) and simple IK (inverse kinematics)
-\end{tightemize}
+% \runsubsection{3D Animator}
+% \descript{| Computer Graphics Animation}
+% \begin{tightemize}
+% \item a simple 3D animator for 3D format PMD/PMX
+% \item implemented using OpenGL/GLSL for model rendering
+% \item supports FK (forward kinematics) and simple IK (inverse kinematics)
+% \end{tightemize}
 \sectionsep
 
 \runsubsection{Latte Compiler}
@@ -262,14 +299,14 @@ Homepage: \href{http://tycheng.github.io}{\custombold{tycheng.github.io}} \\
 \end{tightemize}
 \sectionsep
 
-\runsubsection{GameL}
-\descript{| Scala DSL }
-\begin{tightemize}
-\item a game scripting DSL(domain-specific language) using Scala and Swing
-\item designed syntax for basic game object creation and manipulation
-\item implemented a demo of the classical game Snake using GameL
-\end{tightemize}
-\sectionsep
+% \runsubsection{GameL}
+% \descript{| Scala DSL }
+% \begin{tightemize}
+% \item a game scripting DSL(domain-specific language) using Scala and Swing
+% \item designed syntax for basic game object creation and manipulation
+% \item implemented a demo of the classical game Snake using GameL
+% \end{tightemize}
+% \sectionsep
 
 \end{minipage}
 \end{document}  \documentclass[]{article}
